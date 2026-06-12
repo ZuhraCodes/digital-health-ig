@@ -50,7 +50,11 @@ Description: "Uzbekistan Core profile that stores and represents the National Im
 * useContext[immunizationFocus] ^short = "Marks this PlanDefinition as an immunization schedule"
 * useContext[immunizationFocus].code = $usage-context-type#focus
 * useContext[immunizationFocus].value[x] only CodeableConcept
-* useContext[immunizationFocus].valueCodeableConcept = $sct#33879002 "Active immunization"
+* useContext[immunizationFocus].valueCodeableConcept.coding 1..1
+* useContext[immunizationFocus].valueCodeableConcept.coding.system 1..1
+* useContext[immunizationFocus].valueCodeableConcept.coding.code 1..1
+* useContext[immunizationFocus].valueCodeableConcept.coding.display ^short = "Active immunization"
+* useContext[immunizationFocus].valueCodeableConcept = $sct#33879002
 
 * approvalDate MS
 * effectivePeriod MS
