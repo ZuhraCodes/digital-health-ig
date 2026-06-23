@@ -29,6 +29,8 @@ Description: "Uzbekistan Core ImmunizationRecommendation profile, used to repres
 * recommendation ^short = "Vaccination recommendation"
 * recommendation ^definition = "Recommendation for immunization. Either vaccineCode or targetDisease SHALL be present."
 
+* extension contains RecommendationAuthor named author 0..* MS
+
 * recommendation obeys uzcore-imrec-1
 
 * recommendation.vaccineCode 0..* MS
