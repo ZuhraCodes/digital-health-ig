@@ -8,13 +8,16 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 * ^date = "2025-03-11"
 * ^publisher = "Uzinfocom"
 
-* active and category and type and name MS
+* active and category and type and providedBy MS
+
+* insert MultilingualName(услуги)
 
 
-// Extension Turnaround Time
 * extension contains
-    TurnaroundTime named turnaroundTime 0..1 MS
+    TurnaroundTime named turnaroundTime 0..1 MS and
+    ServiceDefinition named serviceDefinition 0..1 MS
 * extension[turnaroundTime] ^short = "Time from specimen receipt to result availability"
+* extension[serviceDefinition] ^short = "Global ObservationDefinition catalogue entry that defines this offered laboratory service"
 
 * category.coding ^slicing.discriminator.type = #value
 * category.coding ^slicing.discriminator.path = "system"
@@ -30,13 +33,13 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
   * system 1..1 MS
   * system = Canonical(CancerTypesCS)
   * code 1..1 MS
-  * code from ServiceCategoriesVS (required)
+  * code from ServiceCategoriesVS (extensible)
 
 * category.coding[labCategory]
   * system 1..1 MS
   * system = Canonical(LabCategoriesCS)
   * code 1..1 MS
-  * code from lab-service-categories-vs (required)
+  * code from lab-service-categories-vs (extensible)
 
 * type.coding ^slicing.discriminator.type = #value
 * type.coding ^slicing.discriminator.path = "system"
@@ -52,13 +55,13 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
   * system 1..1 MS
   * system = Canonical(CancerTypesCS)
   * code 1..1 MS
-  * code from ServiceNamesVS (required)
+  * code from ServiceNamesVS (extensible)
 
 * type.coding[labService]
   * system 1..1 MS
   * system = Canonical(LabPanelCS) 
   * code 1..1 MS
-  * code from observation-codes-vs (required)
+  * code from observation-codes-vs (extensible)
 
 Instance: example-healthcareservice
 InstanceOf: UZCoreHealthcareService
@@ -93,7 +96,9 @@ Usage: #example
 
 * active = true
 
-// Example Turnaround Time
+// Illustrative: no panel-level ObservationDefinition exists yet, so this points at the hemoglobin analyte definition
+* extension[serviceDefinition].valueCanonical = Canonical(example-laboratory-hemoglobin)
+
 * extension[turnaroundTime].valueDuration.value = 4
 * extension[turnaroundTime].valueDuration.unit = "hours"
 * extension[turnaroundTime].valueDuration.system = "http://unitsofmeasure.org"
