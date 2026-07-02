@@ -1,0 +1,10 @@
+CODE,EN,RU,UZ,Definition,,http://hl7.org/fhir/specimen-role
+b,Blind Sample,Слепой образец,Ko‘r namuna,"Used to test the validity of the measurement process, where the composition of the sample is unknown except to the person submitting it.",,
+c,Calibrator,Калибратор,Kalibrator,Used for initial setting of calibration of the instrument.,,
+e,Electronic QC,Электронный контроль качества,Elektron sifat nazorati,Used with manufactured reference providing signals that simulate QC results.,,
+f,Filler Organization Proficiency,Проверка квалификации организации-исполнителя,Tashkilot malakasini tekshirish,Specimen used for testing proficiency of the organization performing the testing (Filler).,,
+o,Operator Proficiency,Проверка квалификации оператора,Operator malakasini tekshirish,Specimen used for testing Operator Proficiency.,,
+p,Patient,Пациент,Bemor,Used for any patient sample.,,
+q,Control specimen,Контрольный образец,Nazorat namunasi,Used when specimen is the control specimen (either positive or negative).,,
+r,Replicate (of patient sample as a control),Повтор (образца пациента в качестве контроля),Takror (nazorat sifatida bemor namunasi),Used when a patient sample is re-run as a control for a repeat test.,,
+v ,Verifying Calibrator,Проверочный калибрато,Tekshiruvchi kalibrator,Used for periodic calibration checks.,,
