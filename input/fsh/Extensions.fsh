@@ -99,18 +99,3 @@ Context: ServiceRequest
 
 * value[x] only CodeableConcept
 * valueCodeableConcept from PaymentTypeVS (required)
-
-Extension: RecommendationAuthor
-Id: recommendation-author
-Title: "Immunization Recommendation Author"
-Description: "List of authors for ImmunizationRecommendation"
-
-Context: ImmunizationRecommendation
-* ^url = "https://dhp.uz/fhir/core/StructureDefinition/recommendation-author"
-* ^experimental = true
-* ^date = "2026-06-23"
-
-* extension contains author 0..*
-
-* extension[author].value[x] 1..
-* extension[author].value[x] only Reference(Practitioner or PractitionerRole)
