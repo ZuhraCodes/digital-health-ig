@@ -21,6 +21,9 @@ Description: "Uzbekistan Core Consent profile, used to manage patient consent fo
 
 * decision from ConsentProvisionTypeVS (required)
 
+* verification
+  * verificationType from ConsentVerificationVS(required)
+
 * provision
   * action from ConsentActionVS (required)
   * purpose from ConsentPurposeOfUseVS (required)
