@@ -1,0 +1,10 @@
+CODE,RU,UZ,,http://hl7.org/fhir/ValueSet/observation-category
+social history,Социальная история,Ijtimoiy tarix,,
+vital-signs,Жизненно важные показатели,Hayotiy muhim ko'rsatkichlar,,
+imaging,Медицинские снимки,Tibbiy tasvirlar,,
+laboratory,Лаборатория,Laboratoriya,,
+procedure,Процедуры,muolaja,,
+survey,Опрос/анкетирование,So‘rovnoma ,,
+exam,Клинический осмотр,Klinik ko'rik,,
+therapy,Терапия ,Terapiya,,
+activity,Активность,Faollik,,

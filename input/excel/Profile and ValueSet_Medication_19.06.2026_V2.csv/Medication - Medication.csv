@@ -1,0 +1,63 @@
+Оriginal element,FHIR element,,,,,Flags,,Cardinality,Example,Type,Description & Constraints,,
+identifier,identifier,,,,,S,1..*,,,Identifier,"Identifiers for medication (national registry, GTIN, etc.)
+ Binding: IdentifierUseVS (required), IdentifierTypeVS (required)",,
+,identifier:uzpharmBoxGroupID,,,,,S,0..1,,,Identifier,Box-level aggregation identifier used to group serialized pharmaceutical packs into a shipping/carton unit within Uzbekistan's national track-and-trace program,,
+,,system,,,,S,0..1,$uzpharmBoxGroupID,,uri,Fixed system URL for box group ID,,
+,,use,,,,S,1..1,official,,code,Fixed value: official,,
+,,value,,,,S,0..1,BOX-12345678,,string,The actual serial number or identifier value,,
+,identifier:globalTradeItemID,,,,,S,0..1,,,Identifier,Globally standardized trade identifier (GTIN) used for medicinal products,,
+,,system,,,,S,0..1,$globalTradeItemID,,uri,Fixed system URL for GTIN,,
+,,use,,,,S,1..1,official,,code,Fixed value: official,,
+,,value,,,,S,0..1,4603276012294,,string,The GTIN code,,
+,identifier:markingID,,,,,S,0..1,,,Identifier,Uzbekistan's national marking identifier (Asl Belgisi),,
+,,system,,,,S,0..1,$markingID,,uri,Fixed system URL for Asl Belgisi,,
+,,use,,,,S,1..1,official,,code,Fixed value: official,,
+,,value,,,,S,0..1,01046...21...,,string,DataMatrix code or marking ID content,,
+,identifier:registrationCertificateID,,,,,S,0..1,,,Identifier,Official registration certificate identifier for medicines,,
+,,system,,,,S,0..1,$registrationCertificateID,,uri,Fixed system URL for registration certificate,,
+,,use,,,,S,1..1,official,,code,Fixed value: official,,
+,,value,,,,S,0..1,DV/M 02189/07/18,,string,Registration certificate number,,
+,identifier:productServiceID,,,,,S,0..1,,,Identifier,National product and service classification code,,
+,,system,,,,S,0..1,$productServiceID,,uri,Fixed system URL for product service ID,,
+,,use,,,,S,1..1,official,,code,Fixed value: official,,
+,,value,,,,S,0..1,21.20.10,,string,Product service classification code value,,"""code"": {
+    ""coding"": [
+      {
+        ""system"": ""http://www.whocc.no/atc"",
+        ""code"": ""N02BE01"",
+        ""display"": ""Paracetamol""
+      },
+      {
+        ""system"": ""https://nsi.eaeunion.org/medications"",
+        ""code"": ""123456"",
+        ""display"": ""Парацетамол 500 мг, таблетки""
+      }
+    ],
+    ""text"": ""Paracetamol""
+  }"
+code,code,,,,,S,1..1,N02BE01,MedicationClassificationVS (required),CodeableConcept,"Medicinal product classification code (ATC / MNN)
+ Binding: MedicationClassificationVS (required)",,
+status,status,,,,,S?!,1..1,active,MedicationStatusVS (required),code,"Status of the medication
+ Binding: MedicationStatusVS (required)",,
+marketingAuthorizationHolder,marketingAuthorizationHolder,,,,,S,0..1,Reference(Organization/123),UZCoreOrganization,Reference,Organization that holds the marketing authorization for this medication,,
+doseForm,doseForm,,,,,S,0..1,tablet,MedicationDoseFormVS (extensible),CodeableConcept,"The physiological form of the medication (e.g., tablet, capsule, solution)
+ Binding: MedicationDoseFormVS (extensible)",,
+totalVolume,totalVolume,,,,,S,0..1,,,Quantity,Total volume or mass of the package,,
+,,value,,,,S,0..1,100,,decimal,Numerical value of total volume,,
+,,comparator,,,,S,1..1,,QuantityComparatorVS (required),code,"How to understand the value
+ Binding: QuantityComparatorVS (required)",,
+,,code,,,,S,0..1,ml,MedicationTotalVolumeUnitsVS (preferred),code,"Unit representation code
+ Binding: MedicationTotalVolumeUnitsVS (preferred)",,
+ingredient,ingredient,,,,,S,0..*,,,BackboneElement,Active or inactive ingredients of the medication,,
+,,item[x],,,,S,1..1,Reference(Medication/456),MedicationClassificationVS (example),CodeableReference,"The actual ingredient chemical or reference to another medication
+ Only: Reference(UZCoreMedication)",,
+,,strength[x],,,,S,0..1,,,Ratio / Quantity,The amount of ingredient present,,
+,,strengthRatio,,,,S,0..1,,,Ratio,Strength expressed as a ratio,,
+,,,numerator,,,S,0..1,,,Quantity,The value of the numerator,,
+,,,,comparator,,S,1..1,,QuantityComparatorVS (required),code,Numerator comparator,,
+,,,,code,,S,0..1,mg,MedicationTotalVolumeUnitsVS (preferred),code,Numerator unit code,,
+,,,denominator,,,S,0..1,,,Quantity,The value of the denominator,,
+,,,,code,,S,0..1,tablet,MedicationTotalVolumeUnitsVS (preferred),code,Denominator unit code,,
+batch,batch,,,,,S,0..1,,,BackboneElement,Detailed information about the packaged medication,,
+,,lotNumber,,,,S,0..1,AIK-98765,,string,Identifier assigned to the batch (AIK),,
+,,expirationDate,,,,S,0..1,2028-12-31,,dateTime,The date when the batch expires,,

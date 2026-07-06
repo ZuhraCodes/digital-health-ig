@@ -1,0 +1,6 @@
+CODE,EN,RU,UZ,,,
+due,Due,Подлежит вакцинации.,Emlash vaqti keldi.,,,
+overdue,Overdue,Подлежит вакцинации,Muddati o‘tib ketgan.,,,http://hl7.org/fhir/ValueSet/immunization-recommendation-status
+immune,Immune,Иммунитет сформирован.,Immunitet shakllangan,,,
+contraindicated,Contraindicated,Противопоказано,Qarshi ko‘rsatma mavjud,,,
+complete,Complete,Завершена,Yakunlangan,,,

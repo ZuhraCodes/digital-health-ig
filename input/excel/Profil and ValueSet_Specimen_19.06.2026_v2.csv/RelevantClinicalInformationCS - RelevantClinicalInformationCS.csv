@@ -1,0 +1,5 @@
+CODE,EN,RU,UZ,http://terminology.hl7.org/CodeSystem/v2-0916
+F,Patient was fasting prior to the procedure.,Пациент был натощак перед процедурой.,Bemor protsedura oldidan och qoringa edi.,
+NF,The patient indicated they did not fast prior to the procedure,"Пациент сообщил, что не соблюдал голодание перед процедурой.",Bemor protsedura oldidan och qoringa bo‘lmaganini bildirdi.,
+NG,Not Given - Patient was not asked at the time of the procedure.,Не указано — пациента не спрашивали во время процедуры.,Ko‘rsatilmagan protsedura vaqtida bemordan so‘ralmagan.,
+FNA,Fasting not asked of the patient at time of procedure.,Информация о голодании не была запрошена у пациента во время ,Protsedura vaqtida bemordan och qoringa bo‘lishi haqida so‘ralmagan.,

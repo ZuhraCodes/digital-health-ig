@@ -1,0 +1,40 @@
+Name,,,Flags,Cardinality,Example,Reference,Description & Constraints
+Observation Definition,,,,,,ObservationDefinition,
+,url,,Σ S,0..1,,uri,Logical canonical URL to reference this ObservationDefinition (globally unique)
+,identifier,,Σ S,0..1,,Identifier,Business identifier of the ObservationDefinition
+,name,,Σ S,0..1,,string,Name for this ObservationDefinition (computer friendly)
+,title,,Σ S,0..1,,string,Name for this ObservationDefinition (human friendly)
+,status,,Σ S,1..1,,code,"draft | active | retired | unknown
+Binding: PublicationStatus (Required)"
+,date,,Σ S,0..1,,dateTime,Date last changed
+,description,,Σ S,0..1,,,Natural language description of the ObservationDefinition
+,subject,,Σ S,0..*,,CodeableConcept,Type of subject for the defined observation
+,performerType,,,0..1,,CodeableConcept,Desired kind of performer for such kind of observation
+,category,,Σ S,0..*,,CodeableConcept,"General type of observation
+Binding: Observation Category Codes (Example)"
+,code,,Σ S,1..1,,CodeableConcept,"Type of observation
+Binding: LabPanelCS (Example)"
+,permittedUnit,,,0..*,,Coding,"Unit for quantitative results
+Binding: UCUM Codes (Preferred)"
+,method,,,0..1,,CodeableConcept,"Method used to produce the observation
+Binding: Observation Methods (Example)"
+,bodySite,,,0..1,,CodeableConcept,"Body part to be observed
+Binding: SNOMED CT Body Structures (Example)"
+,qualifiedValue,,,0..*,,BackboneElement,Set of qualified values for observation results
+,,context,,0..1,,CodeableConcept,"Context qualifier for the set of qualified values
+Binding: Observation Reference Range Meaning Codes (Extensible)"
+,,appliesTo,,0..*,,CodeableConcept,"Targetted population for the set of qualified values
+Binding: Observation Reference Range Applies To Codes (Example)"
+,,gender,,0..1,,code,"male | female | other | unknown
+Binding: AdministrativeGender (Required)"
+,,age,,0..1,,Range,Applicable age range for the set of qualified values
+,,gestitationalAge,,0..1,,Range,Applicable gestational age range for the set of qualified values
+,,condition,,0..1,,string,Condition associated with the set of qualified values
+,,rangeCategory,,0..1,,code,"reference | critical | absolute
+Binding: Observation Range Category (Required)"
+,,range,,,,Range,
+,hasMember,,,0..*,,Reference(ObservationDefinition | Questionnaire),Definitions of related resources belonging to this kind of observation group
+,component,,,0..*,,BackboneElement,"Component results
++ Rule: If permittedUnit exists, then permittedDataType=Quantity must exist."
+,,code,,1..1,,CodeableConcept,"Type of observation
+Binding: LabPanelCS (Example)"
