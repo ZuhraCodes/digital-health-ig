@@ -23,6 +23,7 @@ Alias: $condition-verification-status = http://terminology.hl7.org/CodeSystem/co
 Alias: $consent-action = http://terminology.hl7.org/CodeSystem/consentaction
 Alias: $consent-provision-type = http://hl7.org/fhir/consent-provision-type
 Alias: $consent-state-codes = http://hl7.org/fhir/consent-state-codes
+Alias: $consent-verification = http://terminology.hl7.org/CodeSystem/consent-verification
 Alias: $contact-point-system = http://hl7.org/fhir/contact-point-system
 Alias: $cvx = http://hl7.org/fhir/sid/cvx
 Alias: $cvx-vs = http://hl7.org/fhir/ValueSet/vaccine-code
