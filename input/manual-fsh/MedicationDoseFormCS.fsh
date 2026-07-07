@@ -106,6 +106,15 @@ Description: "Code system of pharmaceutical dose forms (e.g., tablet, capsule, s
 * #DIS104 "infuziya uchun dispersiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "дисперсия для инфузий"
+* #DIS106 "vena ichiga yuborish uchun dispersiya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "дисперсия для внутривенного введения"
+* #DIS107 "teri ichiga yuborish uchun dispersiya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "дисперсия для внутрикожного введения"
+* #DIS108 "infuziya uchun dispersiya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "дисперсия для инфузий"
 * #CRE101 "krem"
   * ^designation[0].language = #ru
   * ^designation[=].value = "крем"
@@ -131,6 +140,33 @@ Description: "Code system of pharmaceutical dose forms (e.g., tablet, capsule, s
   * ^designation[0].language = #ru
   * ^designation[=].value = "крем ректальный"
 * #CRE109 "quloq kremi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "крем ушной"
+* #CRE110 "krem"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "крем"
+* #CRE111 "vaginal krem"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "крем вагинальный"
+* #CRE112 "koʻz kremi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "крем глазной"
+* #CRE113 "mahalliy qoʻllash uchun krem"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "крем для местного применения"
+* #CRE114 "ogʻiz boʻshligʻi shilliq qavatida qoʻllash uchun krem"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "крем для нанесения на слизистую оболочку полости рта"
+* #CRE115 "sirtga qoʻllash uchun krem"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "крем для наружного применения"
+* #CRE116 "nazal krem"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "крем назальный"
+* #CRE117 "rektal krem"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "крем ректальный"
+* #CRE118 "quloq kremi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "крем ушной"
 * #LIN101 "liniment"
