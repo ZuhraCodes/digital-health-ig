@@ -15,6 +15,17 @@ Description: "Specimen types, supplemented with translations in Uzbek and Russia
   * ^designation[=].value = "Ткань, акне"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Akne to'qimasi"
+* #HLUD
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кровь (аутопсия)"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Autopsiya qoni"
+
+* #PDST
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Место перитонеального диализа"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Peritoneal dializ joyi"
 
 * #ACNFLD
   * ^designation[0].language = #ru

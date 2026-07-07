@@ -1,0 +1,16 @@
+CODE,UZ,RU,EN
+coll-meth-01,Venepunktsiya,Венепункция,Venipuncture
+coll-meth-02,Kapillyar qon olish,Капиллярный забор,Capillary blood collection
+coll-meth-03,Arterial punktsiya,Артериальная пункция,Arterial puncture
+coll-meth-04,Nazofaringeal surtma,Мазок (носоглоточный),Nasopharyngeal swab
+coll-meth-05,Urogenital surtma,Мазок (урогенитальный),Urogenital swab
+coll-meth-06,"Qirib olish (teri, shilliq qavatlar)","Соскоб(кожа , слизистые)","Scraping (skin, mucous membranes)"
+coll-meth-07,"Punktsiya (lyumbal, plevral va boshqalar)",Пункция (люмбальная) плевральная и др.,"Puncture (lumbar, pleural, etc.)"
+coll-meth-08,Plevral punktsiya,Пункция (плевральная).,Pleural puncture
+coll-meth-09,Aspiratsiya — ingichka ignali aspiratsiya (FNA),Аспирация — тонкоигольная аспирация (FNA),Aspiration — fine needle aspiration (FNA)
+coll-meth-10,Biopsiya,Биопсия,Biopsy
+coll-meth-11,Rezeksiya,Резекция,Resection
+coll-meth-12,Bemor tomonidan mustaqil yig‘ish,Самостоятельный сбор пациентом,Self-collection by patient
+coll-meth-13,Kateterizatsiya,Катетеризация,Catheterization
+coll-meth-14,Bronxialveolyar lavaj,Бронхоальвеолярный лаваж,Bronchoalveolar lavage
+coll-meth-15,Otpechatok (impression smear),Отпечаток,Impression smear
