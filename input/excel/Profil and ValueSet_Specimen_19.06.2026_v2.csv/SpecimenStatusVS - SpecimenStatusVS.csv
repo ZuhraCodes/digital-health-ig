@@ -1,0 +1,5 @@
+CODE,RU,UZ,,http://hl7.org/fhir/codesystem-specimen-status.html
+availabe,Зарегистрирован,Registratsiya qilingan,,
+unavailable,Недоступно,Mavjud emas,,
+unsatisfactory,Неудовлетворительно,Qoniqarsiz,,
+entered-in-error,Введено по ошибке,Xato kiritilgan,,
