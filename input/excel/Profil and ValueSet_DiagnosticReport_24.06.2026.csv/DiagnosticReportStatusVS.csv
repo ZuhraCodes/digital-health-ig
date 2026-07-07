@@ -1,0 +1,11 @@
+CODE,UZ,RU,http://hl7.org/fhir/diagnostic-report-status,as-is
+registered,Roʻyxatdan oʻtkazilgan,Зарегистрирован,,
+partial,Qisman,Частичный,,
+preliminary,Dastlabki,Предварительный,,
+modified,Oʻzgartirilgan,Изменённый,,
+final,Yakuniy,Окончательный,,
+corrected,Tuzatilgan,Исправленный,,
+appended,Qoʻshimcha kiritilgan,Дополненный,,
+cancelled,Bekor qilingan,Отменённый,,
+entered-in-error,Xato bilan kiritilgan,Введён по ошибке,,
+unknown,Nomaʼlum,Неизвестно,,
