@@ -1,0 +1,19 @@
+CODE,UZ,RU,EN
+gencl-0002-00001,Yuqori,Высокий,high
+gencl-0002-00002,O'rta,Средний,Medium
+gencl-0002-00003,Past,Низкий,Low
+EM,favqulodda vaziyat,чрезвычайная ситуация,emergency
+P,operatsiyadan oldingi,предоперационный,preop
+PRN,zaruratga qarab,по мере необходимости,as needed
+transferred,Boshqa muassasadan ko‘chirilgan,Переведен из другого учреждения,Transferred from another facility
+mandatory-treatment,Majburiy davolanish,Принудительное лечение,Mandatory treatment
+involuntary-hospitalization,G‘ayriixtiyoriy gospitalizatsiya,Недобровольная госпитализация,Involuntary hospitalization
+A,Iloji boricha tez,Как можно скорее,ASAP
+CR,Natija bo‘yicha qayta aloqa,Обратный вызов по результатам,callback results
+EL,Rejalashtirilgan,Плановый,elective
+R,Oddiy,Рутинный,routine
+RR,Shoshilinch hisobot,Срочная отчетность,rush reporting
+S,Darhol,Немедленно,stat
+T,Vaqtga sezgir,Критично по времени,timing critical
+UD,Shifokor ko‘rsatmasiga binoan,По назначению врача,use as directed
+UR,Shoshilinch,Срочный,urgent

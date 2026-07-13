@@ -1,0 +1,11 @@
+CODE,UZ,RU,EN
+home,Uy,Дом,Home
+other-hcf,Boshqa tibbiy tashkilot,Другое медицинское учреждение,Other healthcare facility
+oth,Boshqa,Другой,Other
+exp,Vafot Etdi,Умер,Expired
+mserv-0004-00001,Kasalxonaga yotqizildi,Госпитализирован,Hospitalized
+mserv-0004-00002,vafot etdi,Умер,Died
+mserv-0004-00003,O'zi chiqib ketdi,Сам ушел из больницы,Self letft from hospital
+mserv-0004-00004,Chiqarildi,Выписан,Discharged
+mserv-0004-00005,IIV massasasiga o'tkazildi,Переведен в учреждение МВД,Transferred to Ministry of Internal Affairs facility
+mserv-0004-00006,Muruvvat uyiga o'tkazildi,Переведён(а) в дом милосердия,Moved to a charity home (residential care facility)
