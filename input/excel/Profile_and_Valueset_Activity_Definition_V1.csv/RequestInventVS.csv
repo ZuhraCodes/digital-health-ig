@@ -1,0 +1,10 @@
+CODE,UZ,RU,http://hl7.org/fhir/request-intent
+proposal,taklif,предложение,
+plan,reja,план,
+directive,ko‘rsatma,распоряжение,
+order,tayinlash,назначение,
+original-order,birlamchi tayinlash,первичное назначение,
+reflex-order,refleks tayinlash,рефлексное назначение,
+ filler-order,ijrochi tayinlashi,назначение исполнителя,
+ instance-order,aniq tayinlash,конкретное назначение,
+option,variant,вариант,

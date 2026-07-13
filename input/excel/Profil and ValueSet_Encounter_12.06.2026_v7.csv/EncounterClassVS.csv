@@ -1,0 +1,11 @@
+CODE,UZ,RU,EN
+IMP,statsionar,стационарная встреча,inpatient
+AMB,ambulator,амбулаторный,ambulatory
+EMER,tez yordam (03),неотложная помощь (03),emergency
+VR,virtual (telemeditsina),виртуальный (телемедицина),virtual
+HH,uyga tashrif (patronaj),визит на дом (патронаж),home visit
+ETH,giyohvand moddalarni suiiste'mol qilish haqidagi ma'lumotlarning sezgirlig,чувствительность информации о злоупотреблении психоактивными веществами,
+PSY,psixiatriya buzilishi ma'lumotlarga sezgirlik,психиатрия расстройство информационная чувствительность,
+STD,jinsiy yo'l bilan yuqadigan kasalliklar haqida ma'lumotlarning sezgirligi,"чувствительность информации о заболеваниях, передающихся половым путем",
+NOAUTH,sub'ektning ruxsatisiz oshkor qilmang,не разглашать без разрешения субъекта,
+NORDSCLCD,roziligisiz qayta oshkor qilish yo'q,нет повторного раскрытия без директивы согласия,

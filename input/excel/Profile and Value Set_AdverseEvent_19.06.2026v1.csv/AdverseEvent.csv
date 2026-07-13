@@ -1,0 +1,28 @@
+,Name,,Flags,,Cardinality,Example,Example,Type,Description & Constraints,,ValueSets,,,
+, AdverseEvent,,TU,D,,,,DomainResource,"Событие, которое может быть связано с непреднамеренными последствиями для пациента или участника исследования.     Элементы, унаследованные от базовых ресурсов:id, meta, implicitRules, language, text, contained, extension, modifierExtension",,System,CodeSystem,Code,Display
+,Identifier,,Σ,D,0..*,,,	Identifier,Бизнес-идентификатор события,,http://hl7.org/fhir/ValueSet/adverse-event-status,AdverseEventStatus,"In Progress,Completed,Entered in Error,Unknown","Коды, определяющие стадию жизненного цикла неблагоприятного события"
+, status,,?!Σ,C,1..1,In Progress,Completed,code,"Статусы события; in-progress | completed | entered-in-error | unknown
+Binding(Required): Adverse Event Status ",,http://hl7.org/fhir/ValueSet/adverse-event-actuality,AdverseEventActuality,"actual,potential",Определяет общий характер неблагоприятного события (реально произошедшее или потенциальное)
+, actuality,,?!Σ,C,1..1,"actual,potential",potential,code,"actual | potential
+Binding(Required): Adverse Event Actuality ",,https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2026-01-01&release=&languages=en,AdverseEventOutcome,"397882007, 398056004, 405531001, 405532008, 405535005","Данный набор значений включает коды, описывающие тип исхода неблагоприятного события."
+,, subject,Σ,,1..1,,,Reference(Patient | Group | Practitioner | RelatedPerson | ResearchSubject),Subject impacted by event,,,,,
+,, encounter,Σ,,	0..1	,,,Reference(Encounter),The Encounter associated with the start of the AdverseEvent,,,,,
+, occurrence[x],,	Σ,,	0..1,,,,	When the event occurred,,,,,
+,, occurrenceDateTime,,,,,,	dateTime,,,,,,
+,,occurrencePeriod,,,,,,	Period,,,,,,
+,, occurrenceTiming,,,,,,Timing,,,,,,
+,detected,,Σ,	0..1,,,,dateTime,When the event was detected,,,,,
+,recordedDate,value,Σ,D,	0..1,,,dateTime,Когда событие было зарегистрировано (внесено в систему),,,,,
+, resultingEffect,,Σ,D,0..*,,,Reference(Condition | Observation),Последствия для пациента в результате данного события.,,,,,
+, location,,Σ,D,0..1,,,Reference(Location),"Место, где произошло нежелательное событие.",,,,,
+,seriousness,,Σ,C,0..1,  serious ,  non-serious ,CodeableConcept,"	Серьёзность / степень тяжести события.
+Binding (Example): Adverse Event Seriousness",,,,,
+, outcome,,Σ,C,0..*,405 532 008,405 535 005,CodeableConcept,"	Тип исхода нежелательного события.
+Binding  (Example): AdverseEvent Outcome ",,,,,
+,, recorder,,,,,,,,,,,,
+,participant,,,,,,,,,,,,,
+,,function,,,,,,,,,,,,
+,, actor,,,,,,,,,,,,
+, recorder,,Σ,D,0..*,,,Reference(Patient | Practitioner | PractitionerRole | RelatedPerson | ResearchSubject),Кто зарегистрировал нежелательное событие.,,,,,
+,suspectEntity,,Σ,,0..*,,,BackboneElement,The suspected agent causing the adverse event,,,,,
+, note,,Σ,D,0..*,,,Annotation,	Комментарий к нежелательному событию.,,,,,

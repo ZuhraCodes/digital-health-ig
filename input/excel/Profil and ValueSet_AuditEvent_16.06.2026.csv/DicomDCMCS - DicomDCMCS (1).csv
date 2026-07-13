@@ -1,0 +1,17 @@
+CODE,UZ,RU,EN
+110100,Ilova faoliyati,Активность приложения,Активность приложения
+110101,Audit jurnalidan foydalanish,Использование журнала аудита,Использование журнала аудита
+110106,Eksport,Экспорт,Экспорт
+110107,Import,Импорт,Импорт
+110110,Bemor yozuvi,Запись пациента,Запись пациента
+110112,So'rov,Запрос,Запрос
+110114,Foydalanuvchi autentifikatsiyasi,Аутентификация пользователя,Аутентификация пользователя
+110121,Tugun autentifikatsiyasi,Аутентификация узла,Аутентификация узла
+110122,Foydalanuvchiga kirishga urinish,Попытка входа пользователя в систему,
+110123,Foydalanuvchini tizimdan chiqishga urinish,Попытка выхода пользователя из системы,
+110150,Ilova,Приложение,
+110151,Ilovani ishga tushiruvchi,Запуск приложений,
+110152,Qabul qiluvchi roli identifikator,Идентификатор роли получателя,
+110153,Manba roli identifikatori,Идентификатор исходной роли,
+110154,Mu'ljallangan vosita,Носитель назначения,
+110155,Manba vositasi,Исходный носитель,

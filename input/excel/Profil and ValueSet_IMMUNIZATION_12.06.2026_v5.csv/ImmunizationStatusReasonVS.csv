@@ -1,0 +1,5 @@
+CODE,snomed,UZ,RU,EN,
+ IMMUNE ,,immunitet,иммунитет,immunity,
+  MEDPREC ,,tibbiy ehtiyot chorasi,Временный отказ от вакцинации по медицинским показаниям,medical precaution,http://hl7.org/fhir/ValueSet/immunization-status-reason
+  OSTOCK ,,sotuvda yo'q,отсутствие товара на складе,product out of stock,
+  PATOBJ ,,bemorning e'tirozi,возражение пациента,patient objection,

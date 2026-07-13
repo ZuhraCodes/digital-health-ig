@@ -1,0 +1,17 @@
+Name,,,Flags,,Cardinality,Example,Document,Reference,Description & Constraints
+DiagnosticReport,,,,,0..*,,,,Laboratory Report DiagnosticReport
+,identifier,,Σ S,,0..*,,,,Identifier for report
+,basedOn,,Σ S,,0..*,,,ServiceRequest,What was requested
+,status,,Σ S,,1..1,,,,Diagnostic Report status . Binding : http://hl7.org/fhir/diagnostic-report-status
+,category,,Σ S,,0..*,,,,Service category Binding: http://terminology.hl7.org/CodeSystem/v2-0074
+,code,,Σ S,,1..1,,,,Type of Report Binding: LabReportTypesVS
+,subject,,Σ S,,1..1,,,Patient/Organization/Pratitioner,Who and/or what this report is about
+,encounter,,Σ S,,0..1,,,Encounter,The healthcare event which this Laboratory Report is about (when test ordered).
+,effective[x],,Σ S,,0..1,,,,Clinically relevant time/time-period for report.
+,performer,,Σ S,,0..*,,,Practitioner / PractitionerRole,Responsible Diagnostic Service.
+,specimen,,Σ S,,0..*,,,Specimen,Specimens this report is based on.
+,result,,Σ S,,0..*,,,Observation,Laboratory results
+,media,,Σ S,,0..*,,,,"Additional data (like images, diagrams or documents) associated with this report"
+,,comment,,,0..1,,,,Comment or explanation about the image or data
+,,link,,,1..1,,,Media,Reference to the image or data
+,presentedForm,,Σ S,,0..*,,,Attachment,Entire report as issued pdf

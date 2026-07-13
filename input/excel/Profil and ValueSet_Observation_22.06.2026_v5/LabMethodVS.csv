@@ -1,0 +1,17 @@
+CODE,SNOMED,UZ,RU,EN
+lab-method-1,258066000,PZR (Polimeraza zanjir reaksiyasi),ПЦР,PCR (Polymerase Chain Reaction)
+lab-method-2,703447009,IFA (Immunoferment tahlil),ИФА,Enzyme immunoassay technique
+lab-method-3,"""68431000052104""",ELISA,ELISA,Enzyme-linked immunosorbent assay technique
+lab-method-4,"""703725008""",Kultural usul,Культуральный метод,Culture technique
+lab-method-5,"""726449005""",Immunoanaliz,Иммуноанализ,Immunoassay technique
+lab-method-6,"""70621000052105""",Spektrofotometriya,Спектрофотометрия,Spectrophotometric technique
+lab-method-7,"""708058007""",Oqim sitometriyasi,Проточная цитометрия,Flow cytometry technique
+lab-method-8,"""278289002""",Mikroskopiya,Микроскопия,Microscopy technique
+lab-method-9,"""1303858005""",Xromatografiya,Хроматография,Chromatography technique
+lab-method-10,"""1306402001""",Mass-spektrometriya,Масс-спектрометрия,Mass spectrometry technique
+lab-method-11,"""1304162005""",Sekvensiyalash,Секвенирование,Nucleic acid sequencing technique
+,,,,
+,,,,
+Include codes from http://snomed.info/sct  where concept is-a 272394005 (Technique),,,,
+Include codes from http://snomed.info/sct  where concept is-a 129264002 (Action),,,,
+Include codes from http://snomed.info/sct  where concept is-a 386053000 (Patient evaluation procedure),,,,
