@@ -1,7 +1,7 @@
 CodeSystem: MedicationAdministrationStatusCodesCS
 Id: medication-administration-status-codes-cs
 Title: "Medication Administration Status CS"
-Description: "CS"
+Description: "Medication Administration Status with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(medication-administration-status-codes-cs, $medication-administration-status-codes, 5.0.0)
 
@@ -46,9 +46,3 @@ Description: "CS"
   * ^designation[=].value = "Noma'lum"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Неизвестно"
-
-//* #planned
-//  * ^designation[0].language = #uz
-//  * ^designation[=].value = "Rejelashtirildi"
-//  * ^designation[+].language = #ru
-//  * ^designation[=].value = "Запланировано"

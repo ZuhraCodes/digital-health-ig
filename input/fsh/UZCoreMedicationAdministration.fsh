@@ -12,13 +12,13 @@ Description: "Administration of medication to a patient"
 * status MS
 * status from MedicationAdministrationStatusCodesVS (required)
 
-* statusReason MS
-* statusReason from MedicationAdministrationStatusReasonVS (example)
+// need to ask this part of element
+//* statusReason MS
+//* statusReason from MedicationAdministrationStatusReasonVS (example)
 //* statusReason from MedicationRequestStatusReasonVS (example)
 
 * category MS
 * category from MedicationAdministrationLocationCodesVS (example)
-// MedicationAdministrationLocation
 
 * medication MS
 * medication only CodeableReference(UZCoreMedication)
@@ -76,31 +76,34 @@ Description: "Administration of medication to a patient"
 
 * extension contains
     RelatedAllergyIntoleranceMedAdministration named relatedAllergyIntolerance 0..1 MS and
-    LocationMedAdministration named location 0..1 MS
+    LocationMedAdministration named location 0..1 MS and
+    MedicationSource named medicationSource 0..1
 
 * extension[relatedAllergyIntolerance] ^short = "Related allergy or intolerance for this administration"
 * extension[relatedAllergyIntolerance].valueReference only Reference(UZCoreAllergyIntolerance)
+
 * extension[location] ^short = "Organization/location where administration took place"
 * extension[location].valueReference only Reference(UZCoreOrganization)
+
+* extension[medicationSource].extension[financingSource].valueCodeableConcept from FinancingSourceVS (required)
 
 Instance: example-Med-Administration-001
 InstanceOf: UZCoreMedicationAdministration
 Usage: #example
 Title: "Example UZCore Medication Administration"
 Description: "Example instance of a completed Paracetamol administration for Patient/1."
-
 * status = #completed
 * category = #inpatient
 * medication[0] = $sct#387517004 "Paracetamol"
-* subject = Reference(UZCorePatient/example-david)
-* encounter = Reference(UZCoreEncounter/example-encounter)
+* subject = Reference(example-david) //UZCorePatient
+* encounter = Reference(example-encounter) //UZCoreEncounter
 * occurenceDateTime = "2026-08-28"
 * recorded = "2026-08-28"
 
 * performer.function = #performer
-* performer.actor = Reference(UZCorePractitioner/example-practitioner)
+* performer.actor = Reference(example-practitioner) //UZCorePractitioner
 
-* reason = Reference(UZCoreCondition/example-cancer)
+* reason = Reference(example-cancer) //UZCoreCondition
 
 * device.concept = $sct#464170000 "Infusion pump"
 
@@ -109,3 +112,4 @@ Description: "Example instance of a completed Paracetamol administration for Pat
 * dosage.site = $sct#368208006 "Left upper arm structure"
 
 * extension[relatedAllergyIntolerance].valueReference = Reference(UZCoreAllergyIntolerance/example-grass-pollen-allergy)
+* extension[medicationSource].extension[financingSource].valueCodeableConcept = FinancingSourceCS#fnncl-0001-00004 "Byudjet"

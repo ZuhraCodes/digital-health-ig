@@ -1,8 +1,8 @@
 ValueSet: ReasonMedicationGivenCodesVS
 Id: reason-medication-given-codes-vs
 Title: "Reason Medication Given VS"
-Description: "VS with Uzbek and Russian translations"
-* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/reason-medication-given-codes"
+Description: "A value set defining codes that represent the reason medication given, supplemented with Uzbek and Russian translations."
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/reason-medication-given-codes-vs"
 
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
