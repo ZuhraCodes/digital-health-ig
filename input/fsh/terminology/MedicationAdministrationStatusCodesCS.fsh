@@ -47,8 +47,8 @@ Description: "CS"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Неизвестно"
 
-* #planned
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Rejelashtirildi"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Запланировано"
+//* #planned
+//  * ^designation[0].language = #uz
+//  * ^designation[=].value = "Rejelashtirildi"
+//  * ^designation[+].language = #ru
+//  * ^designation[=].value = "Запланировано"

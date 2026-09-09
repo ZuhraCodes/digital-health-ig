@@ -4,6 +4,7 @@ Id: uz-core-medication-administration
 Title: "UZ Core Medication Administration"
 Description: "Administration of medication to a patient"
 * ^experimental = true
+* ^status = #active
 
 * identifier MS
 * identifier ^short = "Business identifier for this administration event, assigned by the performer or other systems."
@@ -16,7 +17,8 @@ Description: "Administration of medication to a patient"
 //* statusReason from MedicationRequestStatusReasonVS (example)
 
 * category MS
-* category from MedicationAdministrationLocation (example)
+* category from MedicationAdministrationLocationCodesVS (example)
+// MedicationAdministrationLocation
 
 * medication MS
 * medication only CodeableReference(UZCoreMedication)
@@ -88,8 +90,9 @@ Title: "Example UZCore Medication Administration"
 Description: "Example instance of a completed Paracetamol administration for Patient/1."
 
 * status = #completed
+* category = #inpatient
 * medication[0] = $sct#387517004 "Paracetamol"
-* subject = Reference(UZCorePatient/example-salim)
+* subject = Reference(UZCorePatient/example-david)
 * encounter = Reference(UZCoreEncounter/example-encounter)
 * occurenceDateTime = "2026-08-28"
 * recorded = "2026-08-28"
