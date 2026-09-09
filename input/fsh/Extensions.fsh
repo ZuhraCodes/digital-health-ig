@@ -196,3 +196,20 @@ Description: "Extension to specify a trustee (RelatedPerson or PractitionerRole)
 Context: MedicationRequest
 * ^experimental = true
 * value[x] only Reference(UZCoreRelatedPerson or UZCorePractitionerRole)
+
+
+Extension: RelatedAllergyIntoleranceMedAdministration
+Id: related-allergy-intolerance
+Title: "Related Allergy Intolerance"
+Description: "A reference to the AllergyIntolerance resource relevant to this medication administration."
+Context: MedicationAdministration
+* ^experimental = true
+* value[x] only Reference(UZCoreAllergyIntolerance)
+
+Extension: LocationMedAdministration
+Id: location
+Title: "Location"
+Description: "A reference to the Organization representing the location where the medication administration occurred."
+Context: MedicationAdministration
+* ^experimental = true
+* value[x] only Reference(UZCoreOrganization)
