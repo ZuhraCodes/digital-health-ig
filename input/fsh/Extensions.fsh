@@ -244,4 +244,4 @@ Context: MedicationAdministration
 
 * extension[remainingQuantity] ^short = "'Остаток' — auto-populated from live inventory in the database based on the selected financingSource. Read-only, system-calculated; not manually entered or editable. Reflects stock at time of selection."
 * extension[remainingQuantity].value[x] 0..1
-* extension[remainingQuantity].value[x] only Quantity
+* extension[remainingQuantity].value[x] only SimpleQuantity

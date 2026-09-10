@@ -55,8 +55,8 @@ Description: "Administration of medication to a patient"
 * request ^short = "The order this administration fulfills."
 
 * device MS
-//* device only CodeableReference(DeviceTypeVS) Error
-* device from DeviceTypeVS (extensible)
+* device only CodeableReference(Device)
+* device from DeviceTypeVS (example)
 * device ^short = "Device used to administer the medication (e.g. infusion pump)."
 
 * note ^short = "Free-text remarks not captured elsewhere."
@@ -64,6 +64,7 @@ Description: "Administration of medication to a patient"
 * dosage MS
 * dosage ^short = "Dosage details of how the medication was administered. Requires at least one of text, dose, or rate[x]."
 * dosage.dose 0..1 MS
+* dosage.dose only SimpleQuantity
 * dosage.dose ^short = "Amount given at one administration event (single/instantaneous doses)."
 * dosage.route 0..1 MS
 * dosage.route from RouteCodeVS
