@@ -96,15 +96,15 @@ Description: "Example instance of a completed Paracetamol administration for Pat
 * statusReason = $medicationrequest-status-reason#non-avail
 * category = $medicationrequest-admin-location#inpatient
 * medication[0] = $sct#387517004 "Paracetamol"
-* subject = Reference(example-david) //UZCorePatient
-* encounter = Reference(example-encounter) //UZCoreEncounter
+* subject = Reference(example-david)
+* encounter = Reference(example-encounter)
 * occurenceDateTime = "2026-08-28"
 * recorded = "2026-08-28"
 
 * performer.function = $medication-administration-performer-function-codes#performer
-* performer.actor = Reference(example-practitioner) //UZCorePractitioner
+* performer.actor = Reference(example-practitioner)
 
-* reason = Reference(example-cancer) //UZCoreCondition
+* reason = Reference(example-cancer)
 
 * device.concept = $sct#430033006 "Infusion pump"
 
