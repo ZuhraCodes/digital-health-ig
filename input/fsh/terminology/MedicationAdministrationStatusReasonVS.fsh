@@ -2,8 +2,9 @@ ValueSet: MedicationAdministrationStatusReasonVS
 Id: medication-administration-status-reason-vs
 Title: "Medication Administration Status Reason ValueSet"
 Description: "A value set defining codes that represent the medication administration status, supplemented with Uzbek and Russian translations."
-* ^url = "https://dhp.uz/fhir/core/ValueSet/medicationrequest-status-reason-vs"
-
+* ^url = "https://dhp.uz/fhir/core/ValueSet/medication-administration-status-reason-vs"
+// https://dhp.uz/fhir/core/ValueSet/medicationrequest-status-reason-vs error
+// https://terminology.dhp.uz/fhir/core/ValueSet/medication-administration-status-reason-vs error
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(MedicationRequestStatusReasonCS)

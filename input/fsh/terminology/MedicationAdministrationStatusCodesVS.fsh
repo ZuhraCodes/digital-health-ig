@@ -9,4 +9,4 @@ Description: "A value set defining codes that represent the medication administr
 * ^extension[=].valueCanonical = Canonical(MedicationAdministrationStatusCodesCS)
 * include codes from system $medication-administration-status-codes
 
-* $sct#397943006 "Planned"
+* include $sct#397943006 "Planned"

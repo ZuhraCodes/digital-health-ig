@@ -13,8 +13,8 @@ Description: "Administration of medication to a patient"
 * status from MedicationAdministrationStatusCodesVS (required)
 
 // need to ask this part of element
-//* statusReason MS
-//* statusReason from MedicationAdministrationStatusReasonVS (example)
+* statusReason MS
+* statusReason from MedicationAdministrationStatusReasonVS (example)
 //* statusReason from MedicationRequestStatusReasonVS (example)
 
 * category MS
