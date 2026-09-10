@@ -4,7 +4,7 @@ Id: uz-core-medication-administration
 Title: "UZ Core Medication Administration"
 Description: "Administration of medication to a patient"
 * ^experimental = true
-* ^status = #active
+//* ^status = #active
 
 * identifier MS
 * identifier ^short = "Business identifier for this administration event, assigned by the performer or other systems."
@@ -93,14 +93,14 @@ Usage: #example
 Title: "Example UZCore Medication Administration"
 Description: "Example instance of a completed Paracetamol administration for Patient/1."
 * status = #completed
-* category = #inpatient
+* category = $medicationrequest-admin-location#inpatient
 * medication[0] = $sct#387517004 "Paracetamol"
 * subject = Reference(example-david) //UZCorePatient
 * encounter = Reference(example-encounter) //UZCoreEncounter
 * occurenceDateTime = "2026-08-28"
 * recorded = "2026-08-28"
 
-* performer.function = #performer
+* performer.function = $medication-administration-performer-function-codes#performer
 * performer.actor = Reference(example-practitioner) //UZCorePractitioner
 
 * reason = Reference(example-cancer) //UZCoreCondition
@@ -111,5 +111,5 @@ Description: "Example instance of a completed Paracetamol administration for Pat
 * dosage.route = $sct#26643006 "Oral route"
 * dosage.site = $sct#368208006 "Left upper arm structure"
 
-* extension[relatedAllergyIntolerance].valueReference = Reference(UZCoreAllergyIntolerance/example-grass-pollen-allergy)
-* extension[medicationSource].extension[financingSource].valueCodeableConcept = FinancingSourceCS#fnncl-0001-00004 "Byudjet"
+* extension[relatedAllergyIntolerance].valueReference = Reference(example-grass-pollen-allergy)
+* extension[medicationSource].extension[financingSource].valueCodeableConcept = FinancingSourceCS#fnncl-0001-00004 "Budget"
