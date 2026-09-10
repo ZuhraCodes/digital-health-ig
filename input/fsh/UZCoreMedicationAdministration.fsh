@@ -12,10 +12,8 @@ Description: "Administration of medication to a patient"
 * status MS
 * status from MedicationAdministrationStatusCodesVS (required)
 
-// need to ask this part of element
 * statusReason MS
 * statusReason from MedicationAdministrationStatusReasonVS (example)
-//* statusReason from MedicationRequestStatusReasonVS (example)
 
 * category MS
 * category from MedicationAdministrationLocationCodesVS (example)
@@ -57,7 +55,7 @@ Description: "Administration of medication to a patient"
 * request ^short = "The order this administration fulfills."
 
 * device MS
-* device only CodeableReference(Device)
+* device only CodeableReference(DeviceTypeVS)
 * device ^short = "Device used to administer the medication (e.g. infusion pump)."
 
 * note ^short = "Free-text remarks not captured elsewhere."
@@ -93,6 +91,7 @@ Usage: #example
 Title: "Example UZCore Medication Administration"
 Description: "Example instance of a completed Paracetamol administration for Patient/1."
 * status = #completed
+* statusReason = $medicationrequest-status-reason#non-avail
 * category = $medicationrequest-admin-location#inpatient
 * medication[0] = $sct#387517004 "Paracetamol"
 * subject = Reference(example-david) //UZCorePatient
@@ -105,7 +104,7 @@ Description: "Example instance of a completed Paracetamol administration for Pat
 
 * reason = Reference(example-cancer) //UZCoreCondition
 
-* device.concept = $sct#464170000 "Infusion pump"
+* device.concept = $sct#430033006 "Infusion pump"
 
 * dosage.dose = 500 'mg'
 * dosage.route = $sct#26643006 "Oral route"
