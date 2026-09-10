@@ -55,7 +55,7 @@ Description: "Administration of medication to a patient"
 * request ^short = "The order this administration fulfills."
 
 * device MS
-//* device only CodeableReference(DeviceTypeVS)
+//* device only CodeableReference(DeviceTypeVS) Error
 * device from DeviceTypeVS (extensible)
 * device ^short = "Device used to administer the medication (e.g. infusion pump)."
 

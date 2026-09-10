@@ -8,5 +8,5 @@ Description: "A value set defining codes that represent the medication administr
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(MedicationAdministrationStatusCodesCS)
 * include codes from system $medication-administration-status-codes
-
-* include $sct#397943006 "Planned"
+* include codes from system medication-administration-extra-status-codes-cs
+//* include $sct#397943006 "Planned"
