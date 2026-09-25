@@ -1,8 +1,8 @@
 on:
   push:
-    branches: [ DeviceUsage ]  
+    branches: [ AmbulanceEncounter ]  
   pull_request:
-    branches: [ DeviceUsage ]  
+    branches: [ AmbulanceEncounter ]  
 
 jobs:
   build:
